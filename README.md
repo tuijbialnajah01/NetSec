@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# NetSec
 
-# Run and deploy your AI Studio app
+**NetSec** is an educational platform exploring the Privacy Landscape, Cybersecurity Tools, and the Deep Web.
 
-This contains everything you need to run your app locally.
+## 🛡️ Powered by 𝙱𝙹𝙴 ~ Clan
 
-View your app in AI Studio: https://ai.studio/apps/f19c1f69-c5c9-442f-b841-324b836b7e94
+This project was developed and is maintained by the **𝙱𝙹𝙴 ~ Clan**. We believe in providing transparent, educational resources to increase cybersecurity awareness globally.
 
-## Run Locally
+### Overview
 
-**Prerequisites:**  Node.js
+* **Privacy & Security Tools:** An indexed directory of recommended privacy tools.
+* **Information & Awareness:** Safe, educational-only explanations of the dark web and historical security incidents.
+* **Modern Web PWA:** Works entirely offline and behaves like a native application.
 
+### Local Development
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. \`npm install\`
+2. \`npm run dev\`
+
+### Deployment (Vercel)
+
+This project is natively compatible with Vercel. 
+1. Push your code to GitHub.
+2. Link your GitHub repository to Vercel.
+3. Vercel will automatically detect the **Vite** framework.
+4. It will automatically run \`npm run build\` and deploy the application.
+*(Note: A \`vercel.json\` file is legally included for seamless modern Client-Side routing by default).*
+
+### Disclaimer
+
+This platform is strictly for **educational purposes.** We do not condone illegal activities or the use of illegal darknet markets. No harmful or illegal links are provided within this project.

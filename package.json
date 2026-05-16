@@ -1,7 +1,9 @@
 {
-  "name": "react-example",
+  "name": "netsec-bje-clan",
+  "author": "𝙱𝙹𝙴 ~ Clan",
+  "description": "Educational Deep Web & Privacy Landscape",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",

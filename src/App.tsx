@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { webEntities } from './data';
 import EntityCard from './components/EntityCard';
-import { Shield, Lock, Hexagon, AlertOctagon, Terminal, Download } from 'lucide-react';
+import { AlertOctagon, Terminal, Download } from 'lucide-react';
 
 export default function App() {
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
@@ -36,17 +36,12 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              {/* Custom CSS/Icon Logo */}
-              <div className="relative flex items-center justify-center w-8 h-8 flex-shrink-0">
-                {/* Glowing backdrop */}
-                <div className="absolute inset-0 bg-emerald-500/20 blur-md rounded-lg mix-blend-screen"></div>
-                {/* Background geometric shape */}
-                <Hexagon className="w-8 h-8 text-emerald-500/40 absolute" strokeWidth={1.5} />
-                {/* Main Icon */}
-                <Shield className="w-4 h-4 text-emerald-400 relative z-10" strokeWidth={2.5} />
-                {/* Mini badge icon */}
-                <div className="absolute -bottom-1 -right-1 bg-slate-900 border border-emerald-500/30 rounded-full p-0.5 z-20 shadow-sm shadow-emerald-900/50">
-                  <Lock className="w-2.5 h-2.5 text-emerald-300" strokeWidth={3} />
+              {/* Custom Ns Logo */}
+              <div className="relative flex items-center justify-center w-8 h-8 flex-shrink-0 bg-slate-900 border border-emerald-500/40 rounded-lg shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+                <span className="font-sans font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-emerald-300 to-emerald-600 text-[15px] tracking-tighter ml-0.5">Ns</span>
+                {/* Status Dot */}
+                <div className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-slate-950 rounded-full flex items-center justify-center">
+                  <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
                 </div>
               </div>
               <span className="text-lg font-bold tracking-tight text-white">Net<span className="text-emerald-500">Sec</span></span>
@@ -82,12 +77,13 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-slate-800 bg-slate-950 mt-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-between">
-            <p className="text-slate-500 text-xs flex items-center">
-              <AlertOctagon className="w-3.5 h-3.5 mr-1.5" />
-              Stay safe online. Information is for educational awareness.
-            </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-slate-500 text-xs flex items-center">
+            <AlertOctagon className="w-3.5 h-3.5 mr-1.5" />
+            Stay safe online. Information is for educational awareness.
+          </p>
+          <div className="text-slate-400 text-xs font-mono font-medium tracking-wide">
+            Powered by <span className="text-emerald-400 font-bold">𝙱𝙹𝙴 ~ Clan</span>
           </div>
         </div>
       </footer>
