@@ -36,14 +36,6 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="relative flex items-center w-full min-h-[36px]">
             <div className="flex items-center space-x-3 absolute left-1/2 transform -translate-x-1/2 z-10 w-max">
-              {/* Custom Ox Logo */}
-              <div className="relative flex items-center justify-center w-8 h-8 flex-shrink-0 bg-slate-900 border border-emerald-500/40 rounded-lg shadow-[0_0_15px_rgba(16,185,129,0.2)]">
-                <span className="font-sans font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-emerald-300 to-emerald-600 text-[15px] tracking-tight">Ox</span>
-                {/* Status Dot */}
-                <div className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-slate-950 rounded-full flex items-center justify-center">
-                  <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
-                </div>
-              </div>
               <span className="text-xl font-bold tracking-tight text-white">Obito<span className="text-emerald-500">hex</span></span>
             </div>
             {deferredPrompt && (
