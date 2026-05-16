@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { webEntities } from './data';
 import EntityCard from './components/EntityCard';
-import { AlertOctagon, Terminal, Download } from 'lucide-react';
+import { AlertOctagon, Terminal, Download, MessageCircle } from 'lucide-react';
 
 export default function App() {
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
@@ -77,13 +77,24 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-slate-800 bg-slate-950 mt-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-slate-500 text-xs flex items-center">
-            <AlertOctagon className="w-3.5 h-3.5 mr-1.5" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-slate-500 text-xs flex items-center text-center md:text-left">
+            <AlertOctagon className="w-4 h-4 mr-1.5 flex-shrink-0 inline" />
             Stay safe online. Information is for educational awareness.
           </p>
-          <div className="text-slate-400 text-xs font-mono font-medium tracking-wide">
-            Powered by <span className="text-emerald-400 font-bold">𝙱𝙹𝙴 ~ Clan</span>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <a
+              href="https://wa.me/923711602272"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-1.5 px-4 py-2 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 hover:border-emerald-500/40 rounded-full text-xs font-semibold transition-all"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>WhatsApp Support</span>
+            </a>
+            <div className="text-slate-400 text-xs font-mono font-medium tracking-wide">
+              Powered by <span className="text-emerald-400 font-bold">𝙱𝙹𝙴 ~ Clan</span>
+            </div>
           </div>
         </div>
       </footer>
