@@ -34,26 +34,29 @@ export default function App() {
       {/* Navigation / Header */}
       <nav className="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              {/* Custom Ns Logo */}
+          <div className="relative flex items-center w-full min-h-[36px]">
+            <div className="flex items-center space-x-3 absolute left-1/2 transform -translate-x-1/2 z-10 w-max">
+              {/* Custom Ox Logo */}
               <div className="relative flex items-center justify-center w-8 h-8 flex-shrink-0 bg-slate-900 border border-emerald-500/40 rounded-lg shadow-[0_0_15px_rgba(16,185,129,0.2)]">
-                <span className="font-sans font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-emerald-300 to-emerald-600 text-[15px] tracking-tighter ml-0.5">Ns</span>
+                <span className="font-sans font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-emerald-300 to-emerald-600 text-[15px] tracking-tight">Ox</span>
                 {/* Status Dot */}
                 <div className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-slate-950 rounded-full flex items-center justify-center">
                   <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
                 </div>
               </div>
-              <span className="text-lg font-bold tracking-tight text-white">Net<span className="text-emerald-500">Sec</span></span>
+              <span className="text-xl font-bold tracking-tight text-white">Obito<span className="text-emerald-500">hex</span></span>
             </div>
             {deferredPrompt && (
-              <button
-                onClick={handleInstallClick}
-                className="flex items-center space-x-1.5 px-3 py-1.5 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 hover:border-emerald-500/40 rounded-full text-xs font-semibold transition-all"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>Install App</span>
-              </button>
+              <div className="absolute right-0 z-20">
+                <button
+                  onClick={handleInstallClick}
+                  className="flex items-center space-x-1.5 px-3 py-1.5 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 hover:border-emerald-500/40 rounded-full text-xs font-semibold transition-all"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">Install App</span>
+                  <span className="sm:hidden">Install</span>
+                </button>
+              </div>
             )}
           </div>
         </div>
