@@ -92,9 +92,6 @@ export default function App() {
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp Support</span>
             </a>
-            <div className="text-slate-400 text-xs font-mono font-medium tracking-wide">
-              Powered by <span className="text-emerald-400 font-bold">𝙱𝙹𝙴 ~ Clan</span>
-            </div>
           </div>
         </div>
       </footer>
