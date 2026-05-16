@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#020617"/>
+  <path d="M32 52c0 0 16-8 16-20V18L32 10 16 18v14c0 12 16 20 16 20z" stroke="url(#emeraldGrad)" stroke-width="4" fill="#0f766e" fill-opacity="0.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="25" y="30" width="14" height="10" rx="3" stroke="#6ee7b7" stroke-width="3" fill="none"/>
+  <path d="M28 30v-3a4 4 0 0 1 8 0v3" stroke="#6ee7b7" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
